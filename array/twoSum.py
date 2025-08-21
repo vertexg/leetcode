@@ -1,8 +1,9 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-      total = 0:
-      for i range nums:
-        for b range nums:
-          total += nums[i] + nums[b]
-          if target = total:
-            return [i,b]j]
+      for i in range (len(nums)):
+        for b in range (i+1, len(nums)):
+          if target == nums[i] + nums[b]:
+            return [i,b]
+
+
+# https://leetcode.com/problems/two-sum/
